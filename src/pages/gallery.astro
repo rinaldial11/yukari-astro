@@ -1,10 +1,9 @@
 ---
-import Navbar from '../components/navbar';
-import AboutPage from '../components/about';
-import Footer from '../components/footer';
+import Navbar from "../components/navbar";
+import GalleryPage from "../components/gallery";
 import '../styles/global.css';
+import Footer from '../components/footer';
 ---
-
 
 <html lang="en">
 	<head>
@@ -12,14 +11,14 @@ import '../styles/global.css';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>ABOUT MUGEN (Yukari)</title>
-		<meta name="description" content="ABOUT MUGEN (Yukari) adalah platform pembelajaran modern dengan 1000+ peserta dan 95% tingkat keberhasilan." />
-		<meta property="og:title" content="ABOUT MUGEN (Yukari)" />
+		<title>GALLERY MUGEN (Yukari)</title>
+		<meta name="description" content="Gallery MUGEN (Yukari) adalah platform pembelajaran modern dengan 1000+ peserta dan 95% tingkat keberhasilan." />
+		<meta property="og:title" content="Gallery MUGEN (Yukari)" />
   		<meta property="og:description" content="Bergabunglah bersama 1000+ peserta di platform Yukari, dirancang untuk meningkatkan potensi Anda." />
 	</head>
 	<body>
 		<Navbar client:load />
-        <AboutPage client:load />
-        <Footer client:load />
+		<GalleryPage client:load />
+		<Footer client:load />
 	</body>
 </html>

@@ -1,6 +1,7 @@
 ---
 import Navbar from "../../components/navbar";
 import ProgramDetails from "../../components/program-details"
+import Footer from '../../components/footer';
 import '../../styles/global.css';
 export function getStaticPaths() {
   return [
@@ -28,5 +29,6 @@ const { slug } = Astro.params;
 	<body>
 		<Navbar client:load />
         <ProgramDetails slug={slug} client:load />
+        <Footer client:load />
 	</body>
 </html>

@@ -1,6 +1,7 @@
 ---
 import HomePage from '../components/landing';
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import '../styles/global.css';
 // Component Imports
 // Full Astro Component Syntax:
@@ -21,5 +22,6 @@ import '../styles/global.css';
 	<body>
 		<Navbar client:load />
 		<HomePage client:load />
+		<Footer client:load />
 	</body>
 </html>
